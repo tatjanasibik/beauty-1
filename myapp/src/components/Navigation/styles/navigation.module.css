@@ -1,0 +1,29 @@
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0px 0px;
+  background-color:black;
+  height: 127px;
+}
+
+.ulStyles,
+.navStyle{
+  display: flex;
+  gap: 30px;
+  align-self: center;
+}
+
+.ulStyles li{
+  list-style: none;
+}
+
+.ulStyles a{
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.ulStyles a {
+  color: white;
+}
