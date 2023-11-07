@@ -1,0 +1,21 @@
+.formContainer {
+    background-color: rgb(226, 230, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 57px;
+    padding: 30px;
+  }
+  
+  .formStyle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+  }
+  
+  .submitInputField {
+    align-self: flex-start;
+    margin-top: 15px;
+    background-color: pink;
+  }
