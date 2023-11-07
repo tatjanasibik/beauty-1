@@ -1,11 +1,12 @@
+
 .navContainer{
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 0px 0px;
+  padding: 30px 0px;
   background-color:black;
-  height: 127px;
+  min-height: 127px;
 }
 
 .ulStyles,
@@ -13,6 +14,7 @@
   display: flex;
   gap: 30px;
   align-self: center;
+  align-items: center;
 }
 
 .ulStyles li{
@@ -26,4 +28,25 @@
 
 .ulStyles a {
   color: white;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px){
+  .ulStyles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+  }
+  .navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    padding: 0;
+  }
 }

@@ -7,30 +7,36 @@ export const RegistrationForm = () => {
 
     return (
         <div className={styles.formStyle}>
-            <form className={styles.formContainer}>Registration Form
+            <form className={styles.formContainer}>
+                <h4>Registration Form</h4>
+                <label for="clientName">Client Name</label>
                 <InputField 
                     type="text" 
                     name="clientName" 
-                    id="clientName" 
-                    label="Client name" />
+                    id="clientName" />
+                <label for="clientSurname">Client Surame</label>
                 <InputField 
                     type="text" 
                     name="clientSurname" 
-                    id="clientSurname"
-                    label="Client surname" />
+                    id="clientSurname"/>
+                <label for="clientEmail">Client email</label>
                 <InputField 
                     type="email" 
                     name="clientEmail" 
-                    id="clientEmail"
-                    label="Client email" />
+                    id="clientEmail"/>
+                <label for="registrationDate">Registration date</label>
                 <InputField  
                     type="date" 
                     name="registrationDate" 
-                    id="registrationDate"
-                    label="Registration date" />
+                    id="registrationDate"/>
+                <InputField  
+                    type="time" 
+                    name="registrationTime" 
+                    id="registrationTime"/>
                 <Button 
                     type="submit"
                     text="Confirm registration"
+                    id="confirm-button"
                 />
             </form>
         </div>
