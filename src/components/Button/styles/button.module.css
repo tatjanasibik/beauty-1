@@ -1,0 +1,18 @@
+.button {
+    border: none;
+    font-family: "Manrope", sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5%;
+    border: 2px solid black;
+  }
+  
+  .default {
+    background-color: pink;
+  }
+  
+  .submit {
+    background-color: pink;
+  }
+
