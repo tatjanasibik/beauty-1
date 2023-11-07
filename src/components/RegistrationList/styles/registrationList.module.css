@@ -1,0 +1,55 @@
+h4 {
+    padding: 30px;
+}
+
+.listStyle, table{
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .listStyle button{
+    width: 100%;
+  }
+
+  table body tr {
+    background-color: white;
+    border: 1px solid pink;
+    padding: 30px;
+  }
+
+  table th{
+    background-color: palevioletred;
+    padding: 30px;
+  }
+
+  table body tr:nth-child(even) td{
+    background-color: pink;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 1px solid pink;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 768px){
+    th, td{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 2px;
+      padding: 10px;
+      align-items: center;
+      text-align: center;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table th {
+        padding: 10px;
+    }
+}

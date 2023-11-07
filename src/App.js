@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./App.css";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Navigation} from "./components/Navigation/Navigation";
 import {Registration} from "./pages/Registration/Registration"
@@ -7,7 +8,8 @@ import {Admin} from './pages/Admin/Admin';
 
 function App() {
   return (
-    <>Registration App
+    <>
+    <h1>Registration App</h1>
       <BrowserRouter>
       <Navigation />
         <Routes>
