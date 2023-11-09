@@ -2,33 +2,35 @@ import React from "react";
 import styles from "./styles/registrationForm.module.css";
 import InputField from "../Input/Input";
 import { Button } from "../Button/Button";
+import {RegistrationList}  from "../RegistrationList/RegistrationList";
 
 export const RegistrationForm = () => {
 
     return (
         <div className={styles.formStyle}>
-            <form className={styles.formContainer}>
+            <form className={styles.formContainer} onSubmit={addClient}>
                 <h4>Registration Form</h4>
-                <label for="clientName">Client Name</label>
+                <label htmlFor="clientName">Client Name</label>
                 <InputField 
                     type="text" 
                     name="clientName" 
                     id="clientName" />
-                <label for="clientSurname">Client Surame</label>
+                <label htmlFor="clientSurname">Client Surname</label>
                 <InputField 
                     type="text" 
                     name="clientSurname" 
                     id="clientSurname"/>
-                <label for="clientEmail">Client email</label>
+                <label htmlFor="clientEmail">Client email</label>
                 <InputField 
                     type="email" 
                     name="clientEmail" 
                     id="clientEmail"/>
-                <label for="registrationDate">Registration date</label>
+                <label htmlFor="registrationDate">Registration date</label>
                 <InputField  
                     type="date" 
                     name="registrationDate" 
                     id="registrationDate"/>
+                <label htmlFor="registrationTime">Registration time</label>
                 <InputField  
                     type="time" 
                     name="registrationTime" 
@@ -39,5 +41,6 @@ export const RegistrationForm = () => {
                     id="confirm-button"
                 />
             </form>
+            <RegistrationList></RegistrationList>
         </div>
 )};
