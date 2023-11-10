@@ -2,13 +2,13 @@ import React from "react";
 import styles from "./styles/registrationForm.module.css";
 import InputField from "../Input/Input";
 import { Button } from "../Button/Button";
-import {RegistrationList}  from "../RegistrationList/RegistrationList";
+import { addClient } from "../../scripts/admin";
 
 export const RegistrationForm = () => {
 
     return (
         <div className={styles.formStyle}>
-            <form className={styles.formContainer} onSubmit={addClient}>
+            <form className={styles.formContainer} onSubmit={() => addClient}>
                 <h4>Registration Form</h4>
                 <label htmlFor="clientName">Client Name</label>
                 <InputField 
@@ -41,6 +41,5 @@ export const RegistrationForm = () => {
                     id="confirm-button"
                 />
             </form>
-            <RegistrationList></RegistrationList>
         </div>
 )};
