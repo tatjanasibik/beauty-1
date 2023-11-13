@@ -13,5 +13,5 @@ export function Button({ text, type = "default", onClick }) {
   Button.propTypes = {
     text: PropTypes.string.isRequired,
     onClick: PropTypes.func,
-    type: PropTypes.oneOf(["default", "submit"]),
+    type: PropTypes.oneOf(["default", "submit", "update", "delete"]),
   };
