@@ -1,0 +1,52 @@
+
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0px;
+  background-color:black;
+  min-height: 127px;
+}
+
+.ulStyles,
+.navStyle{
+  display: flex;
+  gap: 30px;
+  align-self: center;
+  align-items: center;
+}
+
+.ulStyles li{
+  list-style: none;
+}
+
+.ulStyles a{
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.ulStyles a {
+  color: white;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px){
+  .ulStyles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+  }
+  .navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    padding: 0;
+  }
+}

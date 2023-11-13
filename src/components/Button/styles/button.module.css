@@ -1,0 +1,26 @@
+.button {
+    border: none;
+    font-family: "Manrope", sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5%;
+    border: 2px solid black;
+    margin: 20px;
+  }
+  
+  .default, .submit {
+    background-color: pink;
+  }
+
+  .update {
+    background-color: white;
+    margin: 0px;
+  }
+
+  .delete {
+    background-color: black;
+    color: white;
+    margin: 0px;
+  }
+
