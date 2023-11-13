@@ -59,12 +59,14 @@ server.get('/api/clients', (_,res) => {
 //Update
 server.put('/api/clients/:id', (req, res) => {
     const clientId = req.params.id;
+    console.log(clientId);
     const updatedClientData = req.body;
 
-    Client.findByIdAdndUpdate(clientId, updatedClientData)
+    Client.findByIdAndUpdate(clientId, updatedClientData)
         .then(() => {
             res.send({message: "Client updated"});
         }).catch((err) => {
+            console.error(err);
             res.send({message: "client was not updated"});
     });
 })
@@ -72,9 +74,9 @@ server.put('/api/clients/:id', (req, res) => {
 //Delete
 server.delete('/api/clients/:id', (req, res) => {
     const clientId = req.params.id;
-    const updatedClientData = req.body;
+    const deletedClientData = req.body;
 
-    Client.findByIdAdndDelete(clientId, updatedClientData)
+    Client.findByIdAndDelete(clientId, deletedClientData)
         .then(() => {
             res.send({message: "Client deleted"});
         })
@@ -83,4 +85,7 @@ server.delete('/api/clients/:id', (req, res) => {
             res.send({message: "client was not deleted"});
     });
 })
+
+
+    
 
